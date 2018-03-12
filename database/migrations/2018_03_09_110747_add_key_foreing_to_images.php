@@ -14,7 +14,7 @@ class AddKeyForeingToImages extends Migration
     public function up()
     {
         Schema::table('images', function(Blueprint $table){
-          $table->foreign('newId')->references('id')->on('news');
+          $table->foreign('publication_id')->references('id')->on('publications');
           //$table->foreign('newId')->references('id')->on('news');
         });
     }
@@ -27,7 +27,7 @@ class AddKeyForeingToImages extends Migration
     public function down()
     {
         Schema::table('images', function (Blueprint $table){
-          $table->dropForeign('images_new_id_foreign');
+          $table->dropForeign('images_publication_id_foreign');
         });
     }
 }
