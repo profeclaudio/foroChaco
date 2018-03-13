@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Publication;
+use App\Category;
 
 class PagesController extends Controller
 {
@@ -19,5 +20,13 @@ class PagesController extends Controller
   public function access()
   {
     return view('access');
+  }
+
+  public function create()
+  {
+    $categories = Category::all();
+    return view('createPublication',[
+      'categories' => $categories,
+    ]);
   }
 }

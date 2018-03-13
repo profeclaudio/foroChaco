@@ -15,5 +15,6 @@ Route::get('/','PagesController@home');
 Route::get('/access','PagesController@access');
 
 Auth::routes();
-
+Route::get('/publication/create','PagesController@create')->middleware('auth');
+Route::post('/publication/create','ProductController@createPost')->middleware('auth');
 Route::get('/home', 'HomeController@index')->name('home');

@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Admin</title>
         <!-- Plugins CSS -->
+         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+
         <link href="{{asset('admin/css/plugins/plugins.css')}}" rel="stylesheet">
         <link href="{{asset('smart-form/smart-templates/css/smart-forms.css')}}" rel="stylesheet">
         <link href="{{asset('js/plugins/morris-chart/morris.css')}}" rel="stylesheet">
@@ -16,6 +18,19 @@
         <link href="{{asset('bower_components/toastr/toastr.min.css')}}" rel="stylesheet">
         <link href="{{asset('linearicons/fonts.css')}}" rel="stylesheet')">
         <link href="{{asset('admin/css/style.css')}}" rel="stylesheet">
+        <link href="{{asset('themes/explorer-fa/theme.css')}}" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" type="text/javascript"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" type="text/javascript"></script>
+</head>
+
+        <script src="https://cdn.ckeditor.com/4.8.0/standard/ckeditor.js"></script>
+        <script src="{{asset('themes/explorer-fa/theme.js')}}"></script>
+        <script src="{{asset('themes/fa/theme.js')}}"></script>
+
+
+        <link href="{{asset('css/fileinput.min.css')}}" media="all" rel="stylesheet" type="text/css" />
+        <script src="{{asset('js/fileinput.min.js')}}"></script>
+        <script src="{{asset('js/locales/es.js')}}"></script>
     </head>
 
     <body class="layout-vertical">
@@ -45,7 +60,7 @@
                         </li>
 
                         <li>
-                            <a href="widgets.html">
+                            <a href="publication/create">
                                 <i class="icon-flag3"></i>
                                 <span class="nav-text">Nueva Publicacion</span></a>
                         </li>
@@ -76,7 +91,7 @@
                             </ul>
                             <ul class="navbar-nav ml-auto">
 
-                          
+
                             </ul>
                         </div>
                     </div>
@@ -117,6 +132,8 @@
         <script type="text/javascript" src="{{asset('admin/js/plugins/plugins.js')}}"></script>
         <script type="text/javascript" src="{{asset('js/assan.custom.js')}}"></script>
         <!--dashboard plugins-->
+
+
         <script src="{{asset('js/raphael-min.js')}}"></script>
         <script src="{{asset('js/plugins/morris-chart/morris.min.js')}}"></script>
         <script src="{{asset('js/plugins/vector-map/jquery-jvectormap-2.0.2.min.js')}}"></script>
