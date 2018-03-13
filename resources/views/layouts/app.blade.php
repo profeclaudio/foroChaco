@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Foro Chaco</title>
+        <title>Assan 3.0</title>
         <!-- Plugins CSS -->
         <link href="{{asset('css/plugins/plugins.css')}}" rel="stylesheet">
         <!-- REVOLUTION STYLE SHEETS -->
@@ -19,7 +20,6 @@
     </head>
 
     <body>
-
         <div id="preloader">
             <div id="preloader-inner"></div>
         </div><!--/preloader-->
@@ -75,30 +75,68 @@
         </aside>
         <!-- Site Overlay -->
         <div class="site-overlay"></div>
+        <!--top bar-->
+        <div class="top-bar clearfix light">
+            <div class="container">
+                <div class="float-sm-right">
+                    <ul class="list-inline mb0">
+                        <li class="list-inline-item">
+                            <a href="#" class="social-icon-sm si-gray si-gray-round si-facebook">
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
 
-        <nav class="navbar navbar-expand-lg navbar-light navbar-transparent bg-faded nav-sticky">
+                        <li class="list-inline-item">
+                            <a href="#" class="social-icon-sm si-gray si-gray-round si-twitter">
+                                <i class="fa fa-twitter"></i>
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="social-icon-sm si-gray si-gray-round si-instagram">
+                                <i class="fa fa-instagram"></i>
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="social-icon-sm si-gray si-gray-round si-g-plus">
+                                <i class="fa fa-google-plus"></i>
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="float-sm-left">
+                    <ul class="list-inline mb0 links">
+                        <li class="list-inline-item"><a href="{{route('login')}}">Login</a></li>
+                        <li class="list-inline-item dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Lang</a>
+                            <ul class="dropdown-menu lang-dropdown">
+                                <li><a href="#" class="dropdown-item">English</a></li>
+                                <li><a href="#" class="dropdown-item">Spanish</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div><!--/top bar-->
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="search-inline">
                 <form>
                     <input type="text" class="form-control" placeholder="Type and hit enter...">
                     <button type="submit"><i class="ti-search"></i></button>
                     <a href="javascript:void(0)" class="search-close"><i class="ti-close"></i></a>
                 </form>
-            </div><!--/search form-->
+            </div>
             <div class="container">
 
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">
-                    <img class='logo logo-dark' src="images/logo.png" alt="">
-                    <img class='logo logo-light hidden-md-down' src="images/logo-light.png" alt="">
-                </a>
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
                 <div  id="navbarNavDropdown" class="navbar-collapse collapse">
                     <ul class="navbar-nav ml-auto">
-                      <li class="nav-item dropdown active">
-                          <a class="nav-link  dropdown-toggle"  href="{{route('login')}}">Login</a>
-                      </li>
-                        <li class="nav-item dropdown active">
+                        <li class="nav-item dropdown">
                             <a class="nav-link  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Home</a>
                             <ul class="dropdown-menu dropdown-menu-right">
                                 <li><a href="index.html" class="dropdown-item">Home 1 - Slider</a></li>
@@ -107,20 +145,12 @@
                                 <li><a href="index-04.html" class="dropdown-item">Home 4 - Text animation</a></li>
                                 <li><a href="index-05.html" class="dropdown-item">Home 5 - Youtube hero</a></li>
                                 <li class=" dropdown-submenu dropdown">
-                                    <a tabindex="-1" href="#" class="dropdown-item">Classic One page <span class="badge badge-danger">HOT</span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="classic-onepage-resume-cv.html" class="dropdown-item">Resume CV</a></li>
-                                        <li><a href="classic-onepage-personal.html" class="dropdown-item">Personal Portfolio</a></li>
-                                        <li><a href="classic-onepage-events.html" class="dropdown-item">Event Landing</a></li>
-                                        <li><a href="classic-onepage-restaurant.html" class="dropdown-item">Restaurant</a></li>
-                                    </ul>
-                                </li>
-                                <li class=" dropdown-submenu dropdown">
                                     <a tabindex="-1" href="#" class="dropdown-item">Demo Shop</a>
                                     <ul class="dropdown-menu">
                                         <li><a href="shop-home.html" class="dropdown-item">Shop home</a></li>
                                         <li><a href="shop-full.html" class="dropdown-item">Shop Full width</a></li>
                                         <li><a href="shop-sidebar.html" class="dropdown-item">Shop Sidebar</a></li>
+
                                         <li><a href="shop-item.html" class="dropdown-item">Shop item</a></li>
                                         <li><a href="shop-cart.html" class="dropdown-item">Shop cart</a></li>
                                         <li><a href="shop-checkout.html" class="dropdown-item">Shop checkout</a></li>
@@ -296,7 +326,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown active">
                             <a class="nav-link  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Features</a>
                             <ul class="dropdown-menu dropdown-menu-right">
                                 <li class=" dropdown-submenu dropdown">
@@ -402,9 +432,7 @@
                                                     <li><a href="shortcode-modals.html"><i class="ti-close"></i> Modals</a></li>
                                                     <li><a href="shortcode-blockquotes.html"><i class="ti-quote-right"></i> Blockquotes</a></li>
                                                     <li><a href="shortcode-paginations.html"><i class="ti-arrow-circle-right"></i> Paginations</a></li>
-                                                    <li><a href="shortcode-form-elments.html"><i class="ti-share"></i> Form Elements</a></li>
-                                                    <li><a href="shortcode-notify.html"><i class="ti-alert"></i>Notification-bar</a></li>
-                                                    <li><a href="shortcode-image-text-cards.html"><i class="ti-image"></i>Image+Text cards</a></li>
+                                                    <li><a href="shortcode-form-elments.html"><i class="ti-share"></i> Form Elements</a></li><li><a href="shortcode-notify.html"><i class="ti-alert"></i>Notification-bar</a></li><li><a href="shortcode-image-text-cards.html"><i class="ti-image"></i>Image+Text cards</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -412,6 +440,10 @@
                                 </li>
                             </ul>
                         </li>
+                        <!--                        <li class="nav-item nav-buttons">
+                                                    <a class="nav-link btn btn-primary" target="_blank" href="https://wrapbootstrap.com/theme/assan-multipurpose-14-themes-admin-WB05F069P">Buy Now</a>
+                                                </li>-->
+
                     </ul>
                 </div>
                 <div class=" navbar-right-elements">
@@ -420,129 +452,140 @@
                         <li class="list-inline-item"><a href="javascript:void(0)" class=" menu-btn"><i class="ti-shopping-cart"></i> <span class="badge badge-default">3</span></a></li>
                     </ul>
                 </div><!--right nav icons-->
+
             </div>
         </nav>
 
         @yield('slider')
         @yield('publications')
 
-
-        <footer class="footer footer-standard pt50 pb20">
+        <div class="container mb70">
+            <div class="row">
+                <div class="col">
+                    <h2 class="mb30"><strong>Light top bar</strong> Header Option</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc vehicula lacinia. Proin adipiscing porta tellus, ut feugiat nibh adipiscing sit amet. In eu justo a felis faucibus ornare vel id metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In eu libero ligula. Fusce eget metus lorem, ac viverra leo. Nullam convallis, arcu vel pellentesque sodales, nisi est varius diam, ac ultrices sem ante quis sem. Proin ultricies volutpat sapien, nec scelerisque ligula mollis lobortis.
+                    </p>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc vehicula lacinia. Proin adipiscing porta tellus, ut feugiat nibh adipiscing sit amet. In eu justo a felis faucibus ornare vel id metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In eu libero ligula. Fusce eget metus lorem, ac viverra leo. Nullam convallis, arcu vel pellentesque sodales, nisi est varius diam, ac ultrices sem ante quis sem. Proin ultricies volutpat sapien, nec scelerisque ligula mollis lobortis.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb10">
+                    <img src="images/bg1.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-8">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc vehicula lacinia. Proin adipiscing porta tellus, ut feugiat nibh adipiscing sit amet. In eu justo a felis faucibus ornare vel id metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In eu libero ligula. Fusce eget metus lorem, ac viverra leo. Nullam convallis, arcu vel pellentesque sodales, nisi est varius diam, ac ultrices sem ante quis sem. Proin ultricies volutpat sapien, nec scelerisque ligula mollis lobortis.
+                </div>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc vehicula lacinia. Proin adipiscing porta tellus, ut feugiat nibh adipiscing sit amet. In eu justo a felis faucibus ornare vel id metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In eu libero ligula. Fusce eget metus lorem, ac viverra leo. Nullam convallis, arcu vel pellentesque sodales, nisi est varius diam, ac ultrices sem ante quis sem. Proin ultricies volutpat sapien, nec scelerisque ligula mollis lobortis.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc vehicula lacinia. Proin adipiscing porta tellus, ut feugiat nibh adipiscing sit amet. In eu justo a felis faucibus ornare vel id metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In eu libero ligula. Fusce eget metus lorem, ac viverra leo. Nullam convallis, arcu vel pellentesque sodales, nisi est varius diam, ac ultrices sem ante quis sem. Proin ultricies volutpat sapien, nec scelerisque ligula mollis lobortis.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc vehicula lacinia. Proin adipiscing porta tellus, ut feugiat nibh adipiscing sit amet. In eu justo a felis faucibus ornare vel id metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In eu libero ligula. Fusce eget metus lorem, ac viverra leo. Nullam convallis, arcu vel pellentesque sodales, nisi est varius diam, ac ultrices sem ante quis sem. Proin ultricies volutpat sapien, nec scelerisque ligula mollis lobortis.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc vehicula lacinia. Proin adipiscing porta tellus, ut feugiat nibh adipiscing sit amet. In eu justo a felis faucibus ornare vel id metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In eu libero ligula. Fusce eget metus lorem, ac viverra leo. Nullam convallis, arcu vel pellentesque sodales, nisi est varius diam, ac ultrices sem ante quis sem. Proin ultricies volutpat sapien, nec scelerisque ligula mollis lobortis.
+            </p>
+        </div>
+        <footer class="footer footer-dark pt50 pb30">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 mb40">
+                    <div class="col-lg-3 col-md-6 mb40">
                         <h3>About Us</h3>
                         <p>
-                            In eu libero ligula. Fusce eget metus lorem, ac viverra leo. Nullam convallis, arcu vel pellentesque sodales, nisi est varius diam, ac ultrices sem ante quis sem. Proin ultricies volutpat sapien, nec scelerisque ligula mollis lobortis.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </p>
-                        <a href="#" class="btn btn-white-outline btn-sm">Learn More</a>
+                        <a href="#" class="btn btn-sm btn-white-outline">Learn More</a>
                     </div>
-                    <div class="col-lg-2 col-md-6 mb40">
-                        <h3>Quick links</h3>
+                    <div class="col-lg-3 col-md-6 mb40">
+                        <h3>Recent Post</h3>
                         <ul class="list-unstyled footer-list-item">
                             <li>
                                 <a href="#">
-                                    About
-                                </a>
+                                    Lorem ipsum dolor sit amet
+                                </a><br>
+                                <em>April 5, 2017</em>
                             </li>
                             <li>
                                 <a href="#">
-                                    News
-                                </a>
+                                    consectetur adipiscing elit
+                                </a><br>
+                                <em>April 5, 2017</em>
                             </li>
                             <li>
                                 <a href="#">
-                                    FAQS
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Contact
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Term & conditions
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Privacy & policy
-                                </a>
+                                    Sed do eiusmod tempor incididunt
+                                </a><br>
+                                <em>April 5, 2017</em>
                             </li>
                         </ul>
                     </div>
                     <div class="col-lg-3 col-md-6 mb40">
-                        <h3>Latest News</h3>
-                        <ul class="list-unstyled latest-news">
-                            <li class="media">
-                                <a href="#"> <img class="d-flex mr-3 img-fluid" width="64" src="images/img1.jpg" alt="Generic placeholder image"></a>
-                                <div class="media-body">
-                                    <h5 class="mt-0 mb-1"><a href="#">Beautiful Sofa lamp at low price</a></h5>
-                                    April 05, 2017
-                                </div>
+                        <h3>Photo stream</h3>
+                        <div class="clearfix">
+                            <a href="#" class="thumb-hover-icon">
+                                <img src="images/img1.jpg" alt="" class="img-fluid" width="90">
+                                <span class="ti-plus"></span>
+                            </a><!--/.hover-->
+                            <a href="#" class="thumb-hover-icon">
+                                <img src="images/img2.jpg" alt="" class="img-fluid" width="90">
+                                <span class="ti-plus"></span>
+                            </a><!--/.hover-->
+                            <a href="#" class="thumb-hover-icon">
+                                <img src="images/img3.jpg" alt="" class="img-fluid" width="90">
+                                <span class="ti-plus"></span>
+                            </a><!--/.hover-->
+                            <a href="#" class="thumb-hover-icon">
+                                <img src="images/img4.jpg" alt="" class="img-fluid" width="90">
+                                <span class="ti-plus"></span>
+                            </a><!--/.hover-->
+                            <a href="#" class="thumb-hover-icon">
+                                <img src="images/img5.jpg" alt="" class="img-fluid" width="90">
+                                <span class="ti-plus"></span>
+                            </a><!--/.hover-->
+                            <a href="#" class="thumb-hover-icon">
+                                <img src="images/img6.jpg" alt="" class="img-fluid" width="90">
+                                <span class="ti-plus"></span>
+                            </a><!--/.hover-->
+                        </div><!--/.clearfix-->
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb40">
+                        <h3>Contact Us</h3>
+                        <ul class="list-unstyled contact-list-item">
+                            <li>
+                                <i class="ti-home"></i>
+                                124, Monalisa Street, Lorem Ipsum, 302012
                             </li>
-                            <li class="media my-3">
-                                <a href="#"> <img class="d-flex mr-3 img-fluid" width="64" src="images/img2.jpg" alt="Generic placeholder image"></a>
-                                <div class="media-body">
-                                    <h5 class="mt-0 mb-1"><a href="#">Lorem ipsum dolor sit amet</a></h5>
-                                    Jan 05, 2017
-                                </div>
+                            <li>
+                                <i class="ti-email"></i>
+                                support@assan.com
                             </li>
-                            <li class="media">
-                                <a href="#"> <img class="d-flex mr-3 img-fluid" width="64" src="images/img5.jpg" alt="Generic placeholder image"></a>
-                                <div class="media-body">
-                                    <h5 class="mt-0 mb-1"><a href="#">New awesome features of bootstrap 4</a></h5>
-                                    March 15, 2017
-                                </div>
+                            <li>
+                                <i class="ti-mobile"></i>
+                                1800 394 3939
                             </li>
                         </ul>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb40">
-                        <h3>Headquarters</h3>
-                        <img src="images/map-img.png" alt="" class="img-fluid">
+                </div><hr class="mb40">
+                <div class="row">
+                    <div class="col-lg-6  ml-auto mr-auto text-center">
+
+                        <p>&copy; Copyright 2017. Assan 3.0</p>
                     </div>
                 </div>
             </div>
         </footer><!--/footer-->
-        <div class="footer-bottomAlt">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7">
-                        <div class="clearfix">
-                            <a href="#" class="social-icon-sm si-dark si-facebook si-dark-round">
-                                <i class="fa fa-facebook"></i>
-                                <i class="fa fa-facebook"></i>
-                            </a>
-                            <a href="#" class="social-icon-sm si-dark si-twitter si-dark-round">
-                                <i class="fa fa-twitter"></i>
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                            <a href="#" class="social-icon-sm si-dark si-g-plus si-dark-round">
-                                <i class="fa fa-google-plus"></i>
-                                <i class="fa fa-google-plus"></i>
-                            </a>
-                            <a href="#" class="social-icon-sm si-dark si-skype si-dark-round">
-                                <i class="fa fa-skype"></i>
-                                <i class="fa fa-skype"></i>
-                            </a>
-                            <a href="#" class="social-icon-sm si-dark si-linkedin si-dark-round">
-                                <i class="fa fa-linkedin"></i>
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <span>&copy; Copyright 2017. All Right Reserved</span>
-                    </div>
-                </div>
-            </div>
-        </div><!--/footer bottom-->
         <!--back to top-->
         <a href="#" class="back-to-top hidden-xs-down" id="back-to-top"><i class="ti-angle-up"></i></a>
         <!-- jQuery first, then Tether, then Bootstrap JS. -->
-        <script type="text/javascript" src="{{asset('js/plugins/plugins.js')}}"></script>
-        <script type="text/javascript" src="{{asset('js/assan.custom.js')}}"></script>
+        <script src="{{asset('js/plugins/plugins.js')}}"></script>
+
+        <script src="{{asset('js/assan.custom.js')}}"></script>
         <!-- load cubeportfolio -->
         <script type="text/javascript" src="{{asset('js/cubeportfolio/js/jquery.cubeportfolio.min.js')}}"></script>
         <!-- REVOLUTION JS FILES -->

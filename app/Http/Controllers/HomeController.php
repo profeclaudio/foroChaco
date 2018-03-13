@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Publication;
 class HomeController extends Controller
 {
     /**
@@ -23,6 +23,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+      $publications = Publication::paginate(10);
+      //dd($publications);
+      return view('admin',[
+        'publications' => $publications
+      ]);
     }
 }

@@ -120,30 +120,14 @@
                        data-paddingleft="[0,0,0,0]"
                        style="z-index: 6; text-align:left; max-width:1170px; white-space: normal;">Take your Project to a new level with assan multipurpose template</div>
               </li>
-              <!-- SLIDE  -->
-              <li data-index="rs-3047" data-transition="parallaxtoright" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-rotate="0"  data-saveperformance="off"  data-title="HTML5 Video" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+              <li data-index="rs-3046" data-transition="parallaxtoleft" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Intro" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                   <!-- MAIN IMAGE -->
-                  <img src="images/video/Busy-People.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                  <img src="images/bg4.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
                   <!-- LAYERS -->
 
-                  <!-- BACKGROUND VIDEO LAYER -->
-                  <div class="rs-background-video-layer"
-                       data-forcerewind="on"
-                       data-volume="mute"
-                       data-videowidth="100%"
-                       data-videoheight="100%"
-                       data-videomp4="images/video/Busy-People.mp4"
-                       data-videopreload="auto"
-                       data-videoloop="none"
-                       data-forceCover="1"
-                       data-aspectratio="16:9"
-                       data-autoplay="true"
-                       data-autoplayonlyfirsttime="false"
-                       data-nextslideatend="true"
-                       ></div>
                   <!-- LAYER NR. 1 -->
                   <div class="tp-caption mainSlide-Title-Centered   tp-resizeme"
-                       id="slide-1706-layer-8"
+                       id="slide-1706-layer-4"
                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
                        data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','1']"
                        data-fontsize="['55','55','40','30']"
@@ -161,10 +145,10 @@
                        data-paddingbottom="[10,10,10,10]"
                        data-paddingleft="[0,0,0,0]"
 
-                       style="z-index: 6; text-align:center; white-space: normal;">Smooth parallax videos </div>
+                       style="z-index: 6; text-align:center; white-space: normal;">Build Using modern tools </div>
                   <!-- LAYER NR. 3 -->
                   <div class="tp-caption mainSlide-caption   tp-resizeme"
-                       id="slide-1706-layer-9"
+                       id="slide-1706-layer-5"
                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
                        data-y="['middle','middle','middle','middle']" data-voffset="['80','80','80','50']"
                        data-fontsize="['24','24','24','16']"
@@ -180,8 +164,10 @@
                        data-paddingright="[0,0,0,0]"
                        data-paddingbottom="[10,10,10,10]"
                        data-paddingleft="[0,0,0,0]"
-                       style="z-index: 6; text-align:left; max-width:1170px; white-space: normal;">Create a smooth parallax video background with assan easily</div>
+                       style="z-index: 6; text-align:left; max-width:1170px; white-space: normal;">Take your Project to a new level with assan multipurpose template</div>
               </li>
+              <!-- SLIDE  -->
+            
           </ul>
           <div class="tp-bannertimer" style="height: 7px; background-color: rgba(255, 255, 255, 0.25);"></div>	</div>
   </div><!-- END REVOLUTION SLIDER -->
