@@ -37,8 +37,8 @@ $factory->define(App\Category::class,function(Faker\Generator $faker){
 
 $factory->define(App\Publication::class,function(Faker\Generator $faker){
   return [
-     'categoryId'=> $faker->numberBetween($min=1,$max=5),
-     'userId'=> '1',
+     'category_id'=> $faker->numberBetween($min=1,$max=5),
+     'user_id'=> '1',
      'title'=> $faker->text($maxNbChars=50),
      'content'=> $faker->text($maxNbChars=500),
      //'content'=> $faker->randomHtml(2,3),

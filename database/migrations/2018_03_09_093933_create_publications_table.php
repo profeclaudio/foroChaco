@@ -15,8 +15,8 @@ class CreatePublicationsTable extends Migration
     {
         Schema::create('publications', function(Blueprint $table){
           $table->increments('id');
-          $table->integer('categoryId')->unsigned();
-          $table->integer('userId')->unsigned();
+          $table->integer('category_id')->unsigned();
+          $table->integer('user_id')->unsigned();
           $table->string('title');
           $table->text('content');
           $table->string('statusNew',15);

@@ -14,8 +14,8 @@ class AddKeyForeingToPublications extends Migration
     public function up()
     {
       Schema::table('publications', function(Blueprint $table){
-        $table->foreign('categoryId')->references('id')->on('categories');
-        $table->foreign('userId')->references('id')->on('users');
+        $table->foreign('category_id')->references('id')->on('categories');
+        $table->foreign('user_id')->references('id')->on('users');
       });
 
     }
@@ -28,8 +28,8 @@ class AddKeyForeingToPublications extends Migration
     public function down()
     {
         Schema::table('publications', function (Blueprint $table){
-          $table->dropForeign('publications_categoryId_foreign');
-          $table->dropForeign('publications_userId_foreign');
+          $table->dropForeign('publications_category_id_foreign');
+          $table->dropForeign('publications_user_id_foreign');
         });
     }
 }
