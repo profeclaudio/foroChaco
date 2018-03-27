@@ -46,7 +46,7 @@
               <td>{{$publication->id}}</td>
               <td>{{$publication->title}}</td>
               <td>{{$publication->created_at}}</td>
-              <td>Editar</td>
+              <td><a href="publication/edit/{{$publication->id}}">Editar</a></td>
 
           </tr>
         @empty

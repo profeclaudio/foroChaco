@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Publication;
 use App\Image;
+use App\Category;
 use App\Http\Requests\CreatePublicationRequest;
 
 class HomeController extends Controller
@@ -44,11 +45,48 @@ class HomeController extends Controller
         'statusNew' =>'despublicado'
       ]);
 
+      $img = $request->file('input-img');
+
       $image = Image::create([
         'publication_id'=>$publication->id,
-        'name'=>'holaMundo.jpg',
+        'name' =>$img->store('images','public'),
         'type'=>'n'
       ]);
+      return redirect('home');
+    }
+
+    public function editGetPublication(Publication $publication)
+    {
+      //dd($publication);
+      $categories = Category::all();
+      return view('editPublication',[
+        'publication'=>$publication,
+        'categories'=>$categories,
+      ]);
+    }
+
+    public function editPublication(CreatePublicationRequest $request)
+    {
+      $user= $request->user();
+
+      $publication = Publication::find($request->input('id'));
+
+      $publication->id=$request->input('id');
+      $publication->user_id=$user->id;
+      $publication->title=$request->input('title');
+      $publication->content=$request->input('content');
+      $publication->statusNew=$request->input('status');
+
+      $publication->save();
+
+      $img = $request->file('input-img');
+
+      $image = Image::find($publication->id);
+
+      $image->id=$publication->id;
+      $image->name=$img->store('images','public');
+      $image->save();
+
       return redirect('home');
     }
 }
