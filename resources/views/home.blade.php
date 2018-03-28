@@ -167,7 +167,7 @@
                        style="z-index: 6; text-align:left; max-width:1170px; white-space: normal;">Take your Project to a new level with assan multipurpose template</div>
               </li>
               <!-- SLIDE  -->
-            
+
           </ul>
           <div class="tp-bannertimer" style="height: 7px; background-color: rgba(255, 255, 255, 0.25);"></div>	</div>
   </div><!-- END REVOLUTION SLIDER -->
@@ -209,7 +209,7 @@
                     <div class="entry-card">
                         <a href="#" class="entry-thumb">
                             @foreach ($publication->image as $image)
-                              <img src="{{$image->name}}" alt="" class="img-fluid">
+                              <img src="{{Storage::disk('public')->url($image->name)}}" alt="" class="img-fluid">
                             @endforeach
 
                             <span class="thumb-hover ti-back-right"></span>
