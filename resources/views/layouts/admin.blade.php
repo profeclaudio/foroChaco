@@ -52,7 +52,7 @@
                                 <span class="nav-text">Dashboard</span></a>
                         </li>
                         <li>
-                            <a class="has-arrow" href="#" aria-expanded="false">
+                            <a class="has-arrow" href="{{route('home')}}" aria-expanded="false">
                                 <i class="icon-flag3"></i>
                                 <span class="nav-text">Publicaciones</span>
                             </a>
@@ -60,7 +60,7 @@
                         </li>
 
                         <li>
-                            <a href="publication/create">
+                            <a href="{{route('publicationCreate')}}">
                                 <i class="icon-flag3"></i>
                                 <span class="nav-text">Nueva Publicacion</span></a>
                         </li>
