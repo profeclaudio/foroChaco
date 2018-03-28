@@ -6,7 +6,7 @@
   <div class="container">
     <h2>Nueva Publicación</h2>
     <hr>
-    <form  enctype="multipart/form-data" class="" action="/publication/create" method="post">
+    <form  enctype="multipart/form-data" class="" action="{{route('publicationCreatePost')}}" method="post">
       {{csrf_field()}}
       <div class="form-group @if($errors->has('title')) has-danger @endif">
         <label for="title">Título</label>
@@ -43,7 +43,7 @@
         @endif
       </div>
       <div class="row">
-  
+
           <div class="form-group @if($errors->has('image')) has-danger @endif">
             <div class="row">
                 <input id="input-img" name="input-img" type="file" class="file">
