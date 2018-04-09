@@ -23,10 +23,15 @@
       </div>
 
       <div class="form-group @if($errors->has('category_id')) has-danger @endif">
-        <label for="marginClient">Categoria</label>
+        <label for="category_id">Categoria</label>
         <select class="form-control" name="category_id">
           @foreach ($categories as $category)
-            <option value="{{$category->id}}">{{$category->description}}</option>
+            @if ($category->id==$publication->category_id)
+              <option selected value="{{$category->id}}">{{$category->description}}</option>  
+            @else
+              <option value="{{$category->id}}">{{$category->description}}</option>
+            @endif
+
           @endforeach
         </select>
       </div>

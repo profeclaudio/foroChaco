@@ -7,6 +7,7 @@ use App\Publication;
 use App\Image;
 use App\Category;
 use App\Http\Requests\CreatePublicationRequest;
+use App\Http\Requests\UpdatePublicationRequest;
 
 class HomeController extends Controller
 {
@@ -27,7 +28,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-      $publications = Publication::paginate(10);
+      $publications = Publication::orderBy('id','desc')->paginate(10);
       //dd($publications);
       return view('admin',[
         'publications' => $publications
@@ -65,27 +66,34 @@ class HomeController extends Controller
       ]);
     }
 
-    public function editPublication(CreatePublicationRequest $request)
+    public function editPostPublication(UpdatePublicationRequest $request)
     {
       $user= $request->user();
 
-      $publication = Publication::find($request->input('id'));
+      //dd($request);
+      $publication = Publication::find($request->input('publication_id'));
 
-      $publication->id=$request->input('id');
+      $publication->category_id=$request->input('category_id');
+
+      $publication->id=$request->input('publication_id');
       $publication->user_id=$user->id;
       $publication->title=$request->input('title');
       $publication->content=$request->input('content');
-      $publication->statusNew=$request->input('status');
+      //$publication->statusNew=$request->input('status');
+      $publication->statusNew='publicado';
 
       $publication->save();
 
-      $img = $request->file('input-img');
+      //if ($request->file('input-img')) {
+        $img = $request->file('input-img');
 
-      $image = Image::find($publication->id);
+        $image = Image::find($publication->id);
 
-      $image->id=$publication->id;
-      $image->name=$img->store('images','public');
-      $image->save();
+        $image->id=$publication->id;
+        $image->name=$img->store('images','public');
+        $image->save();
+
+      //}
 
       return redirect('home');
     }
