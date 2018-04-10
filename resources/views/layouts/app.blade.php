@@ -162,40 +162,55 @@
 
         @yield('slider')
         @yield('publications')
+        <div class="bg-parallax parallax-overlay" data-jarallax='{"speed": 0.2}' style='background-image: url("images/bg5.jpg")'>
+           <div class="container pt90 pb60">
+               <div class="row align-items-center">
+                   <div class="col-lg-9 mb30">
+                       <h3 class="text-white mb30">Quienes somos?</h3>
+                       <p class="text-white-gray">
+                         En el III Encuentro Mundial del Gran Chaco Americano, realizado en junio de 2016 en Villamontes, Bolivia, se inició un proceso de articulación trinacional de autoridades públicas y legisladores chaqueños, que luego de 3 reuniones de coordinación y planificación (Yacuiba, Salta y Filadelfia) dio lugar a la creación del Foro de Representantes del Chaco, un mecanismo inédito que contribuye a la gobernabilidad transfronteriza de la región.
+                         El Foro de Representantes, es un espacio creado para facilitar la gobernanza transfronteriza de la región del Gran Chaco Americano, está conformado por autoridades representativas del nivel sub nacional y local de Argentina, Bolivia y Paraguay. Su creación fue motivada por la creciente constatación de que los complejos desafíos, e igualmente diversas  oportunidades para la región, solo pueden ser encaradas de manera integral, pues temas como los impactos del Cambio Climático o el deterioro ambiental de la cuenca del Pilcomayo rebasan las fronteras e impactan por igual en las poblaciones ribereñas de los tres países.
+                       </p>
+                   </div>
 
-        <div class="container mb70">
-            <div class="row">
-                <div class="col">
-                    <h2 class="mb30"><strong>Light top bar</strong> Header Option</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc vehicula lacinia. Proin adipiscing porta tellus, ut feugiat nibh adipiscing sit amet. In eu justo a felis faucibus ornare vel id metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In eu libero ligula. Fusce eget metus lorem, ac viverra leo. Nullam convallis, arcu vel pellentesque sodales, nisi est varius diam, ac ultrices sem ante quis sem. Proin ultricies volutpat sapien, nec scelerisque ligula mollis lobortis.
-                    </p>
-                    <p class="lead">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc vehicula lacinia. Proin adipiscing porta tellus, ut feugiat nibh adipiscing sit amet. In eu justo a felis faucibus ornare vel id metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In eu libero ligula. Fusce eget metus lorem, ac viverra leo. Nullam convallis, arcu vel pellentesque sodales, nisi est varius diam, ac ultrices sem ante quis sem. Proin ultricies volutpat sapien, nec scelerisque ligula mollis lobortis.
-                    </p>
+                   <div class="col-lg-3 mb30 mb30 text-center">
+                     <div class="entry-card">
+                             <a href="#" class="entry-thumb">
+                                 <img src="images/logos.png" alt="" class="img-fluid">
+                                 <span class="thumb-hover ti-back-right"></span>
+                             </a><!--/entry thumb-->
+
+                          </div>
+                   </div>
+               </div>
+           </div>
+       </div><!--/.Analysis-->
+
+          <div class="container pt90 pb60">
+              <div class="row align-items-center">
+                <div class="col-lg-5 mb30 mb30 text-center">
+                  <div class="entry-card">
+                          <a href="#" class="entry-thumb">
+                              <img src="images/fotoforo.jpg" alt="" class="img-fluid">
+                              <span class="thumb-hover ti-back-right"></span>
+                          </a><!--/entry thumb-->
+
+                       </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 mb10">
-                    <img src="images/bg1.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="col-md-8">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc vehicula lacinia. Proin adipiscing porta tellus, ut feugiat nibh adipiscing sit amet. In eu justo a felis faucibus ornare vel id metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In eu libero ligula. Fusce eget metus lorem, ac viverra leo. Nullam convallis, arcu vel pellentesque sodales, nisi est varius diam, ac ultrices sem ante quis sem. Proin ultricies volutpat sapien, nec scelerisque ligula mollis lobortis.
-                </div>
-            </div>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc vehicula lacinia. Proin adipiscing porta tellus, ut feugiat nibh adipiscing sit amet. In eu justo a felis faucibus ornare vel id metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In eu libero ligula. Fusce eget metus lorem, ac viverra leo. Nullam convallis, arcu vel pellentesque sodales, nisi est varius diam, ac ultrices sem ante quis sem. Proin ultricies volutpat sapien, nec scelerisque ligula mollis lobortis.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc vehicula lacinia. Proin adipiscing porta tellus, ut feugiat nibh adipiscing sit amet. In eu justo a felis faucibus ornare vel id metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In eu libero ligula. Fusce eget metus lorem, ac viverra leo. Nullam convallis, arcu vel pellentesque sodales, nisi est varius diam, ac ultrices sem ante quis sem. Proin ultricies volutpat sapien, nec scelerisque ligula mollis lobortis.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc vehicula lacinia. Proin adipiscing porta tellus, ut feugiat nibh adipiscing sit amet. In eu justo a felis faucibus ornare vel id metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In eu libero ligula. Fusce eget metus lorem, ac viverra leo. Nullam convallis, arcu vel pellentesque sodales, nisi est varius diam, ac ultrices sem ante quis sem. Proin ultricies volutpat sapien, nec scelerisque ligula mollis lobortis.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc vehicula lacinia. Proin adipiscing porta tellus, ut feugiat nibh adipiscing sit amet. In eu justo a felis faucibus ornare vel id metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In eu libero ligula. Fusce eget metus lorem, ac viverra leo. Nullam convallis, arcu vel pellentesque sodales, nisi est varius diam, ac ultrices sem ante quis sem. Proin ultricies volutpat sapien, nec scelerisque ligula mollis lobortis.
-            </p>
-        </div>
+                  <div class="col-lg-7 mb30">
+                      <h3>Que hacemos?</h3>
+                      <p>
+                        En el III Encuentro Mundial del Gran Chaco Americano, realizado en junio de 2016 en Villamontes, Bolivia, se inició un proceso de articulación trinacional de autoridades públicas y legisladores chaqueños, que luego de 3 reuniones de coordinación y planificación (Yacuiba, Salta y Filadelfia) dio lugar a la creación del Foro de Representantes del Chaco, un mecanismo inédito que contribuye a la gobernabilidad transfronteriza de la región.
+                        El Foro de Representantes, es un espacio creado para facilitar la gobernanza transfronteriza de la región del Gran Chaco Americano, está conformado por autoridades representativas del nivel sub nacional y local de Argentina, Bolivia y Paraguay. Su creación fue motivada por la creciente constatación de que los complejos desafíos, e igualmente diversas  oportunidades para la región, solo pueden ser encaradas de manera integral, pues temas como los impactos del Cambio Climático o el deterioro ambiental de la cuenca del Pilcomayo rebasan las fronteras e impactan por igual en las poblaciones ribereñas de los tres países.
+                      </p>
+                  </div>
+
+
+              </div>
+          </div><!--/.Analysis-->
+
+
+
         <footer class="footer footer-dark pt50 pb30">
             <div class="container">
                 <div class="row">
