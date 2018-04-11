@@ -162,7 +162,7 @@
 
         @yield('slider')
         @yield('publications')
-        <div class="bg-parallax parallax-overlay" data-jarallax='{"speed": 0.2}' style='background-image: url("images/bg5.jpg")'>
+        <div class="footer footer-dark">
            <div class="container pt90 pb60">
                <div class="row align-items-center">
                    <div class="col-lg-9 mb30">
