@@ -21,50 +21,36 @@
                     <div class="card-header accordion-header" role="tab" id="headingOne">
                         <h5 class="mb-0">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Gran Chaco Americano
+                                Que hacemos
                             </a>
                         </h5>
                     </div>
 
                     <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
                         <div class="card-body">
-                          <p>En el III Encuentro Mundial del Gran Chaco Americano, realizado en junio de 2016 en Villamontes, Bolivia, se
-                            inició un proceso de articulación trinacional de autoridades públicas y legisladores chaqueños, que luego de
-                            3 reuniones de coordinación y planificación (Yacuiba, Salta y Filadelfia) dio lugar a la creación del Foro
-                            de Representantes del Chaco, un mecanismo inédito que contribuye a la gobernabilidad transfronteriza de la región.
+                          <p>Desde su creación el Foro de Representantes del Chaco inició una dinámica de trabajo de impacto y colaboración entre distintas instancias públicas y organizaciones comunales y de la sociedad civil, que se plasmó en acuerdos transfronterizos para que a través de la Oficina Técnica Nacional del río Pilcomayo de Bolivia, se realice intervenciones en la cuenca del río Pilcomayo, que afectado por la colmatación perdió su continuidad, ocasionando la interrupción del ciclo de vida de las especies piscícolas y desbordes en la época de lluvias. Esta intervención técnica, producto de un acuerdo colaborativo, mitigo riesgos de inundaciones en 2016 y posibilitó la pesca artesanal a comunidades indígenas ribereñas luego de cinco años sin este factor clave de su sobrevivencia. Los cambios climáticos que está experimentando la región e intervenciones que afectan al ecosistema, hacen que este esquema de cooperación cobre valor y aporte a una mayor resiliencia frente a complejos desafíos futuros.
                           </p>
                           <p>
-                          El Foro de Representantes, es un espacio creado para facilitar la gobernanza transfronteriza de la región del Gran Chaco Americano, está conformado por autoridades representativas del nivel sub nacional y local de Argentina, Bolivia y Paraguay. Su creación fue motivada por la creciente constatación de que los complejos desafíos, e igualmente diversas  oportunidades para la región, solo pueden ser encaradas de manera integral, pues temas como los impactos del Cambio Climático o el deterioro ambiental de la cuenca del Pilcomayo rebasan las fronteras e impactan por igual en las poblaciones ribereñas de los tres países.
-                        </p>
+                            Igualmente, el Foro de Representantes del Chaco tramitó su incorporación a la Confederación Parlamentaria de las Américas (COPA) e hizo una presentación de la problemática de la región ante la XV Asamblea General con la participación de la sociedad civil chaqueña a través de Redes Chaco.
+                         </p>
+                         <p>
+                           Asimismo, se logró la incorporación del Foro en el ZICOSUR (Zona de Integración del Centro Oeste Sudamericano) como actor representativo de la región e interlocutor válido ante este importante organismo de integración.                         </p>
+                        <p>
+                          Los acuerdos colaborativos desplegados por el Foro buscan:
+                       </p>
+                       <ul>
+                         <li>Generar visiones compartidas respecto al desarrollo en general de la región, pero también en la gestión de problemas puntuales que afectan a la calidad de vida de su población. </li>
+                         <li>Establecer mecanismos permanentes de interacción con la ciudadanía a fin de canalizar participativamente demandas e inquietudes. </li>
+                         <li>Facilitar soluciones oportunas y consistentes, en el marco de sus posibilidades y competencias, a las demandas identificadas.</li>
+                         <li>Facilitar políticas públicas de carácter local, nacional y trinacional que favorezcan el desarrollo sostenible de la región.</li>
+                         <li>Acercar a la región innovaciones tecnológicas y sociales que dinamicen y fomenten actividades productivas y sociales en beneficio del desarrollo sostenible y los sectores sociales más vulnerables de la región.</li>
+                       </ul>
 
                          </div>
                     </div>
                 </div>
 
-                <div class="card mb10">
-                    <div class="card-header accordion-header" role="tab" id="headingTwo">
-                        <h5 class="mb-0">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                               Un Foro de alto valor para la región
-                            </a>
-                        </h5>
-                    </div>
-
-                    <div id="collapseTwo" class="collapse show" role="tabpanel" aria-labelledby="headingTwo">
-                        <div class="card-body">
-                          <p>Una serie de características, ligadas a la visión y naturaleza que el Foro fue asumiendo
-                            en su proceso de constitución, hacen de él un espacio de alto valor para la región, destacándose entre otras, las siguientes:
-                          </p>
-                          <ul>
-                            <li>Es un Espacio Inédito para la gestión transfronteriza de un ecosistema de alta importancia como lo es el Gran Chaco Americano;</li>
-                            <li>Facilita la Gobernanza al acercar al ciudadano los espacios de decisión pública a nivel local, nacional y regional;</li>
-                            <li>Logra Legitimidad a través de mecanismos participativos de interacción con organizaciones sociales, comunidades e instituciones de la sociedad civil;</li>
-                            <li>Busca la Complementariedad entre los diferentes actores de la región con la finalidad de movilizar esfuerzos compartidos para la solución de problemas comunes;</li>
-                            <li>En base a acuerdos colaborativos logra el Uso eficiente de Recursos en sus intervenciones en favor de la comunidad, bajo el principio de “mucho con poco”;</li>
-                          </ul>
-                        </div>
-                    </div>
-                </div>
+          
 
             </div>
            </div>

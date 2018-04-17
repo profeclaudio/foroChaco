@@ -135,17 +135,16 @@
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+                <a class="navbar-brand" href="/"><img src="images/logo.png" alt=""></a>
                 <div  id="navbarNavDropdown" class="navbar-collapse collapse">
                     <ul class="navbar-nav ml-auto">
                       <li><a href="/" class="nav-link  dropdown-toggle">Inicio</a></li>
-                      <li><a href="/" class="nav-link  dropdown-toggle">Autoridades</a></li>
+                      <li><a href="{{route('autoridades')}}" class="nav-link  dropdown-toggle">Autoridades</a></li>
                       <li class="nav-item dropdown">
                             <a class="nav-link  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Institucional</a>
                             <ul class="dropdown-menu dropdown-menu-right">
-                                <li><a href="/" class="dropdown-item">Quienes somos</a></li>
-                                <li><a href="/" class="dropdown-item">Qué hacemos</a></li>
-                                <li><a href="/" class="dropdown-item">Gestión de Proyecdtos</a></li>
+                                <li><a href="{{route('quienes')}}" class="dropdown-item">Quienes somos</a></li>
+                                <li><a href="{{route('que')}}" class="dropdown-item">Qué hacemos</a></li>
                             </ul>
                         </li>
                         <li><a href="/" class="nav-link  dropdown-toggle">Contacto</a></li>
@@ -166,7 +165,7 @@
         @yield('que')
 
 
-    
+
 
 
 

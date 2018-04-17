@@ -14,6 +14,8 @@
 Route::get('/','PagesController@home');
 Route::get('/quienes','PagesController@quienes')->name('quienes');
 Route::get('/quehacemos','PagesController@que')->name('que');
+Route::get('/autoridades','PagesController@autoridades')->name('autoridades');
+
 
 Route::get('/access','PagesController@access');
 

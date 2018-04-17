@@ -32,6 +32,11 @@ class PagesController extends Controller
     return view('quehacemos');
   }
 
+  public function autoridades()
+  {
+    return view('autoridades');
+  }
+
   public function create()
   {
     $categories = Category::all();
