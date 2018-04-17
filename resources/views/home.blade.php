@@ -243,3 +243,61 @@
       </div>
   </div><!--news-->
 @endsection
+
+@section('quienes')
+  <div class="footer footer-dark">
+     <div class="container pt90 pb60">
+         <div class="row align-items-center">
+             <div class="col-lg-9 mb30">
+                 <h3 class="text-white mb30">Quienes somos?</h3>
+                 <p class="text-white-gray">
+                   En el III Encuentro Mundial del Gran Chaco Americano, realizado en junio de 2016 en Villamontes, Bolivia, se inició un proceso de articulación trinacional de autoridades públicas y legisladores chaqueños, que luego de 3 reuniones de coordinación y planificación (Yacuiba, Salta y Filadelfia) dio lugar a la creación del Foro de Representantes del Chaco, un mecanismo inédito que contribuye a la gobernabilidad transfronteriza de la región.
+                   El Foro de Representantes, es un espacio creado para facilitar la gobernanza transfronteriza de la región del Gran Chaco Americano,...
+
+                 </p>
+                 <a href="{{route('quienes')}}" class="btn btn-rounded btn-primary btn-lg">
+                               Lees mas
+                           </a>
+             </div>
+
+             <div class="col-lg-3 mb30 mb30 text-center">
+               <div class="entry-card">
+                       <a href="#" class="entry-thumb">
+                           <img src="images/logos.png" alt="" class="img-fluid">
+                           <span class="thumb-hover ti-back-right"></span>
+                       </a><!--/entry thumb-->
+
+                    </div>
+             </div>
+         </div>
+     </div>
+ </div><!--/.Analysis-->
+@endsection
+
+@section('que')
+  <div class="container pt90 pb60">
+      <div class="row align-items-center">
+        <div class="col-lg-5 mb30 mb30 text-center">
+          <div class="entry-card">
+                  <a href="#" class="entry-thumb">
+                      <img src="images/fotoforo.jpg" alt="" class="img-fluid">
+                      <span class="thumb-hover ti-back-right"></span>
+                  </a><!--/entry thumb-->
+
+               </div>
+        </div>
+          <div class="col-lg-7 mb30">
+              <h3>Que hacemos?</h3>
+              <p>
+                En el III Encuentro Mundial del Gran Chaco Americano, realizado en junio de 2016 en Villamontes, Bolivia, se inició un proceso de articulación trinacional de autoridades públicas y legisladores chaqueños, que luego de 3 reuniones de coordinación y planificación (Yacuiba, Salta y Filadelfia) dio lugar a la creación del Foro de Representantes del Chaco, un mecanismo inédito que contribuye a la gobernabilidad transfronteriza de la región.
+                El Foro de Representantes, es un espacio creado para facilitar la gobernanza transfronteriza de la región del Gran Chaco Americano,...
+              </p>
+              <a href="{{route('que')}}" class="btn btn-rounded btn-primary btn-lg">
+                            Lees mas
+                        </a>
+          </div>
+
+
+      </div>
+  </div><!--/.Analysis-->
+@endsection

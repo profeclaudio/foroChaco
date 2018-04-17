@@ -12,6 +12,9 @@
 */
 
 Route::get('/','PagesController@home');
+Route::get('/quienes','PagesController@quienes')->name('quienes');
+Route::get('/quehacemos','PagesController@que')->name('que');
+
 Route::get('/access','PagesController@access');
 
 Auth::routes();

@@ -22,6 +22,16 @@ class PagesController extends Controller
     return view('access');
   }
 
+  public function quienes()
+  {
+    return view('quienes');
+  }
+
+  public function que()
+  {
+    return view('quehacemos');
+  }
+
   public function create()
   {
     $categories = Category::all();
