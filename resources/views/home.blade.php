@@ -210,7 +210,7 @@
                                   {{substr($publication->content,3,160)."..."}}
                             </p>
                             <div class="text-right">
-                                <a href="/noticia/{{$publication->id}}" class="btn-link btn">Leer mas</a>
+                                <a href="{{route('noticia',$publication->id)}}" class="btn-link btn">Leer mas</a>
                             </div>
                         </div><!--/entry content-->
                     </div>
