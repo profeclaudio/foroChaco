@@ -181,13 +181,13 @@
                         </p>
                         <a href="{{route('quienes')}}" class="btn btn-sm btn-white-outline">Leer más</a>
                     </div>
-                    {{-- <div class="col-lg-3 col-md-6 mb40">
+                    <div class="col-lg-3 col-md-6 mb40">
                         <h3>Publicaciones recientes</h3>
                         <ul class="list-unstyled footer-list-item">
                         @forelse ($publications as $publication)
                           <li>
                               <a href="#">
-                                  {{substr($publication->title,0,20).' ...'}}
+                                  {{str_limit($publication->title,25).' ...'}}
                               </a><br>
                               <em>{{$publication->created_at}}</em>
                           </li>
@@ -197,7 +197,7 @@
                         @endforelse
                         </ul>
 
-                    </div> --}}
+                    </div>
                     <div class="col-lg-3 col-md-6 mb40">
                         <h3>Fotos</h3>
                         <div class="clearfix">

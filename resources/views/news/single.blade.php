@@ -68,7 +68,7 @@
                                <img src="{{Storage::disk('public')->url($image->name)}}" alt="Generic placeholder image" class="d-flex mr-3 img-fluid" width="64">
                              @endforeach
                                <div class="media-body">
-                                   <h5 class="mt-0 mb-1"><a href="{{route('noticia',$publication->id)}}">{{str_limit($publication->title,20).'...'}}</a></h5>
+                                   <h5 class="mt-0 mb-1"><a href="{{route('noticia',$publication->id)}}">{{str_limit($publication->title,35).'...'}}</a></h5>
                                    {{$publication->created_at}}
                                </div>
                            </li>
