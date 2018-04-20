@@ -175,9 +175,10 @@
                     <div class="col-lg-3 col-md-6 mb40">
                         <h3>Sobre nosotros</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          En el III Encuentro Mundial del Gran Chaco Americano, realizado en junio de 2016 en Villamontes, Bolivia, se
+                          inició un proceso de articulación trinacional de autoridades públicas y legisladores chaqueños, que luego de...
                         </p>
-                        <a href="#" class="btn btn-sm btn-white-outline">Leer más</a>
+                        <a href="{{route('quienes')}}" class="btn btn-sm btn-white-outline">Leer más</a>
                     </div>
                     <div class="col-lg-3 col-md-6 mb40">
                         <h3>Publicaciones recientes</h3>
