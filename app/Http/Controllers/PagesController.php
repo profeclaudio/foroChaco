@@ -19,7 +19,10 @@ class PagesController extends Controller
 
   public function access()
   {
-    return view('access');
+        $publications = Publication::where('id','>',0)->orderBy('id','DESC')->take(3)->get();
+    return view('access',[
+      'publications' => $publications
+    ]);
   }
 
   public function quienes()

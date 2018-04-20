@@ -76,20 +76,7 @@
 
                          @endforelse
 
-                           <li class="media my-4">
-                               <img class="d-flex mr-3 img-fluid" width="64" src="images/img2.jpg" alt="Generic placeholder image">
-                               <div class="media-body">
-                                   <h5 class="mt-0 mb-1"><a href="#">Lorem ipsum dolor sit amet</a></h5>
-                                   Jan 05, 2017
-                               </div>
-                           </li>
-                           <li class="media">
-                               <img class="d-flex mr-3 img-fluid" width="64" src="images/img3.jpg" alt="Generic placeholder image">
-                               <div class="media-body">
-                                   <h5 class="mt-0 mb-1"><a href="#">Lorem ipsum dolor sit amet</a></h5>
-                                   March 15, 2017
-                               </div>
-                           </li>
+                      
                        </ul>
                    </div>
                </div>
