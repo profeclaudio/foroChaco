@@ -186,8 +186,8 @@
                         <ul class="list-unstyled footer-list-item">
                         @forelse ($publications as $publication)
                           <li>
-                              <a href="#">
-                                  {{str_limit($publication->title,25).' ...'}}
+                              <a href="{{route('noticia',$publication->id)}}">
+                                  {{str_limit($publication->title,25)}}
                               </a><br>
                               <em>{{$publication->created_at}}</em>
                           </li>
