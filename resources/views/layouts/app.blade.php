@@ -12,6 +12,8 @@
         <link href="{{asset('css/plugins/plugins.css')}}" rel="stylesheet">
         <!-- REVOLUTION STYLE SHEETS -->
         <link rel="stylesheet" type="text/css" href="{{asset('css/revolution/css/settings.css')}}">
+        <link type="text/css" rel="stylesheet"  href="{{asset('smart-form/contact/css/smart-forms.css')}}">
+
         <!-- REVOLUTION LAYERS STYLES -->
         <link rel="stylesheet" type="text/css" href="{{asset('css/revolution/css/layers.css')}}">
         <!-- REVOLUTION NAVIGATION STYLES -->
@@ -147,7 +149,7 @@
                                 <li><a href="{{route('que')}}" class="dropdown-item">Qué hacemos</a></li>
                             </ul>
                         </li>
-                        <li><a href="/" class="nav-link  dropdown-toggle">Contacto</a></li>
+                        <li><a href="{{route('contacto')}}" class="nav-link  dropdown-toggle">Contacto</a></li>
                       </ul>
                 </div>
                 <div class=" navbar-right-elements">

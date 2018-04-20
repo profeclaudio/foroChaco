@@ -33,6 +33,14 @@ class PagesController extends Controller
     ]);
   }
 
+  public function contacto()
+  {
+    $publications = Publication::where('id','>',0)->orderBy('id','DESC')->take(3)->get();
+    return view('contacto',[
+      'publications' => $publications
+    ]);
+  }
+
   public function que()
   {
     $publications = Publication::where('id','>',0)->orderBy('id','DESC')->take(3)->get();
