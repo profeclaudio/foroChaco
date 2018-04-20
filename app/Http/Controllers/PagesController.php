@@ -42,10 +42,11 @@ class PagesController extends Controller
   {
     //dd($publication);
     $publications = Publication::where('id','>',0)->orderBy('id','DESC')->take(3)->get();
-
+    $categories = Category::all();
     return view('news.single',[
       'publications' =>$publications,
-      'post'=>$publication
+      'post'=>$publication,
+      'categories'=>$categories
     ]);
   }
 

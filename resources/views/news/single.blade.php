@@ -49,25 +49,33 @@
                        </form>
                    </div><!--/col-->
                    <div class="mb40">
-                       <h4 class="sidebar-title">Categories</h4>
+                       <h4 class="sidebar-title">Categorias</h4>
                        <ul class="list-unstyled categories">
-                           <li><a href="#">Rent</a></li>
+                         @forelse ($categories as $category)
+                           <li><a href="#">{{$category->description}}</a></li>
+                         @empty
 
-                           <li><a href="#">Top Rating</a></li>
-                           <li><a href="#">Trending</a></li>
-                           <li><a href="#">Newest Properties</a></li>
+                         @endforelse
+
                        </ul>
                    </div><!--/col-->
                    <div>
                        <h4 class="sidebar-title">Ultimas Noticias</h4>
                        <ul class="list-unstyled">
+                         @forelse ($publications as $publication)
                            <li class="media">
-                               <img class="d-flex mr-3 img-fluid" width="64" src="images/img1.jpg" alt="Generic placeholder image">
+                             @foreach ($publication->image as $image)
+                               <img src="{{Storage::disk('public')->url($image->name)}}" alt="Generic placeholder image" class="d-flex mr-3 img-fluid" width="64">
+                             @endforeach
                                <div class="media-body">
-                                   <h5 class="mt-0 mb-1"><a href="#">Lorem ipsum dolor sit amet</a></h5>
-                                   April 05, 2017
+                                   <h5 class="mt-0 mb-1"><a href="#">{{substr($publication->title,0,25)."..."}}</a></h5>
+                                   {{$publication->created_at}}
                                </div>
                            </li>
+                         @empty
+
+                         @endforelse
+
                            <li class="media my-4">
                                <img class="d-flex mr-3 img-fluid" width="64" src="images/img2.jpg" alt="Generic placeholder image">
                                <div class="media-body">
