@@ -169,6 +169,7 @@
 
 
 
+
         <footer class="footer footer-dark pt50 pb30">
             <div class="container">
                 <div class="row">
@@ -183,25 +184,23 @@
                     <div class="col-lg-3 col-md-6 mb40">
                         <h3>Publicaciones recientes</h3>
                         <ul class="list-unstyled footer-list-item">
-                            <li>
-                                <a href="#">
-                                    Lorem ipsum dolor sit amet
-                                </a><br>
-                                <em>April 5, 2017</em>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    consectetur adipiscing elit
-                                </a><br>
-                                <em>April 5, 2017</em>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Sed do eiusmod tempor incididunt
-                                </a><br>
-                                <em>April 5, 2017</em>
-                            </li>
+                        @forelse ($publications as $publication)
+                          <li>
+                              <a href="#">
+                                  {{substr($publication->title,0,25).' ...'}}
+                              </a><br>
+                              <em>{{$publication->created_at}}</em>
+                          </li>
+
+                        @empty
+
+                        @endforelse
                         </ul>
+
+
+
+
+
                     </div>
                     <div class="col-lg-3 col-md-6 mb40">
                         <h3>Fotos</h3>

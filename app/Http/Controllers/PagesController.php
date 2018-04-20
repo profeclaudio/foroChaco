@@ -24,17 +24,26 @@ class PagesController extends Controller
 
   public function quienes()
   {
-    return view('quienes');
+    $publications = Publication::where('id','>',0)->orderBy('id','DESC')->take(3)->get();
+    return view('quienes',[
+      'publications' => $publications
+    ]);
   }
 
   public function que()
   {
-    return view('quehacemos');
+    $publications = Publication::where('id','>',0)->orderBy('id','DESC')->take(3)->get();
+    return view('quehacemos',[
+      'publications' => $publications
+    ]);
   }
 
   public function autoridades()
   {
-    return view('autoridades');
+      $publications = Publication::where('id','>',0)->orderBy('id','DESC')->take(3)->get();
+    return view('autoridades',[
+      'publications' => $publications
+    ]);
   }
 
   public function create()
