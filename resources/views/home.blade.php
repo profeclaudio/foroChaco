@@ -202,7 +202,7 @@
                                 </span>
                             </div>
                             <h4 class="entry-title text-capitalize">
-                                <a href="#">
+                                <a href="{{route('noticia',$publication->id)}}">
                                       {{$publication->title}}
                                 </a>
                             </h4>
