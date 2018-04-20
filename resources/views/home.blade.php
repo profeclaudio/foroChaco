@@ -188,7 +188,7 @@
               @forelse ($publications as $publication)
                 <div class="col-lg-4 mb30 wow fadeInUp" data-wow-delay=".2s">
                     <div class="entry-card">
-                        <a href="#" class="entry-thumb">
+                        <a href="{{route('noticia',$publication->id)}}" class="entry-thumb">
                             @foreach ($publication->image as $image)
                               <img src="{{Storage::disk('public')->url($image->name)}}" alt="" class="img-fluid">
                             @endforeach
