@@ -187,7 +187,7 @@
                         @forelse ($publications as $publication)
                           <li>
                               <a href="#">
-                                  {{substr($publication->title,0,25).' ...'}}
+                                  {{substr($publication->title,0,20).' ...'}}
                               </a><br>
                               <em>{{$publication->created_at}}</em>
                           </li>
@@ -196,10 +196,6 @@
 
                         @endforelse
                         </ul>
-
-
-
-
 
                     </div>
                     <div class="col-lg-3 col-md-6 mb40">

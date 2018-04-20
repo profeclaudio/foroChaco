@@ -38,9 +38,21 @@ class PagesController extends Controller
     ]);
   }
 
+  public function singleNew(Publication $publication)
+  {
+    //dd($publication);
+    $publications = Publication::where('id','>',0)->orderBy('id','DESC')->take(3)->get();
+
+    return view('news.single',[
+      'publications' =>$publications,
+      'post'=>$publication
+    ]);
+  }
+
   public function autoridades()
   {
       $publications = Publication::where('id','>',0)->orderBy('id','DESC')->take(3)->get();
+
     return view('autoridades',[
       'publications' => $publications
     ]);

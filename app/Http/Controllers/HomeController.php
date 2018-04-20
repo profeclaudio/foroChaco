@@ -35,6 +35,7 @@ class HomeController extends Controller
       ]);
     }
 
+  
     public function createPublication(CreatePublicationRequest $request)
     {
       $user= $request->user();
