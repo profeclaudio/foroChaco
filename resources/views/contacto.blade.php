@@ -59,7 +59,7 @@
          <div class="col-md-6 mb40">
              <h2>Escribenos</h2>
              <p>
-                 Te invitamos a completar el formulario que se encuentra abajo para que pronto nos pongas en contacto contigo.
+                 Te invitamos a completar el formulario que se encuentra abajo para que pronto nos pongamos en contacto contigo.
              </p>
             <div class="smart-wrap">
      <div class="smart-forms smart-container">
