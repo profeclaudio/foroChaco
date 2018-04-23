@@ -1,6 +1,10 @@
 @extends('layouts.app')
 
 @section('slider')
+
+  {{-- <div id="rev_slider_1078_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container"
+  data-alias="classic4export" data-source="gallery" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;"> --}}
+  {{-- "container pb50"  --}}
   <div class="container pb50">
            <div class="row">
                <div class="col-md-9 mb40">
@@ -82,4 +86,5 @@
                </div>
            </div>
        </div>
+
 @endsection

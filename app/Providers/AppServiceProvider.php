@@ -20,7 +20,7 @@ class AppServiceProvider extends ServiceProvider
       //    $publications = Publication::orderBy('id','desc')->paginate(3);
       //    $view->with('publications', $publications);
       //  });
-       $publications = Publication::orderBy('id','desc')->paginate(3);
+      $publications = Publication::where('id','>',0)->orderBy('id','DESC')->take(3)->get();
 
        view()->share('publications', $publications);
 

@@ -22,12 +22,13 @@
 
                                 </div><!--card top-->
                                 <div class="card-content pb20">
-                                   <table id="data-table" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                                   <table id="data-table"  class="table table-striped table-bordered table-hover" cellspacing="0" width="100%">
     <thead>
         <tr>
             <th>Id</th>
             <th>Titulo</th>
             <th>Fecha Creacion</th>
+            <th>Estado</th>
             <th>Accion</th>
 
         </tr>
@@ -37,16 +38,23 @@
           <th>Id</th>
           <th>Titulo</th>
           <th>Fecha Creacion</th>
+          <th>Estado</th>
           <th>Accion</th>
         </tr>
     </tfoot>
     <tbody>
         @forelse ($publications as $publication)
-          <tr>
+          @if ($publication->statusNew=='publicado')
+            <tr class="table table-primary">
+          @else
+            <tr class="table table-secundary">
+          @endif
+
               <td>{{$publication->id}}</td>
               <td>{{$publication->title}}</td>
               <td>{{$publication->created_at}}</td>
-              <td><a href="publication/edit/{{$publication->id}}">Editar</a></td>
+              <td>{{$publication->statusNew}}</td>
+              <td><a class="btn btn-light" href="publication/edit/{{$publication->id}}">Editar</a></td>
 
           </tr>
         @empty

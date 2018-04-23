@@ -35,7 +35,7 @@ class HomeController extends Controller
       ]);
     }
 
-  
+
     public function createPublication(CreatePublicationRequest $request)
     {
       $user= $request->user();
@@ -61,7 +61,7 @@ class HomeController extends Controller
     {
       //dd($publication);
       $categories = Category::all();
-      return view('editPublication',[
+      return view('admin.editPublication',[
         'publication'=>$publication,
         'categories'=>$categories,
       ]);
@@ -75,26 +75,28 @@ class HomeController extends Controller
       $publication = Publication::find($request->input('publication_id'));
 
       $publication->category_id=$request->input('category_id');
-
       $publication->id=$request->input('publication_id');
       $publication->user_id=$user->id;
       $publication->title=$request->input('title');
       $publication->content=$request->input('content');
+      $publication->statusNew=$request->input('statusNew');
       //$publication->statusNew=$request->input('status');
-      $publication->statusNew='publicado';
+
 
       $publication->save();
+      //dd($publication);
+      $img = $request->file('input-img');
 
-      //if ($request->file('input-img')) {
-        $img = $request->file('input-img');
-
-        $image = Image::find($publication->id);
-
-        $image->id=$publication->id;
+      if ($img<>null) {
+        //$img = $request->file('input-img');
+        //dd($publication);
+        $image = Image::where('publication_id','=',$publication->id)->first();
+        //dd($image);
+        //$image->id=$publication->id;
         $image->name=$img->store('images','public');
         $image->save();
 
-      //}
+      }
 
       return redirect('home');
     }

@@ -9,6 +9,20 @@
     <form  enctype="multipart/form-data" class="" action="/publication/edit" method="post">
       {{csrf_field()}}
       <input type="hidden" name="publication_id" value="{{$publication->id}}">
+
+      <div class="form-group @if($errors->has('category_id')) has-danger @endif">
+        <label for="statusNew">Estado</label>
+        <select class="form-control" name="statusNew">
+              @if($publication->statusNew=="publicado")
+                <option selected value="publicado">Publicado</option>
+                <option value="despublicado">Despublicado</option>
+              @else
+                <option  value="publicado">Publicado</option>
+                <option selected value="despublicado">Despublicado</option>
+              @endif
+        </select>
+      </div>
+
       <div class="form-group @if($errors->has('title')) has-danger @endif">
         <label for="title">Título</label>
         <input type="text" name="title" value="{{$publication->title}}" class="form-control"
@@ -27,7 +41,7 @@
         <select class="form-control" name="category_id">
           @foreach ($categories as $category)
             @if ($category->id==$publication->category_id)
-              <option selected value="{{$category->id}}">{{$category->description}}</option>  
+              <option selected value="{{$category->id}}">{{$category->description}}</option>
             @else
               <option value="{{$category->id}}">{{$category->description}}</option>
             @endif
