@@ -16,11 +16,11 @@
         <link href="{{asset('js/plugins/data-tables/fixedHeader.bootstrap.min.css')}}" rel="stylesheet">
         <link href="{{asset('js/plugins/data-tables/responsive.bootstrap4.min.css')}}" rel="stylesheet">
         <link href="{{asset('bower_components/toastr/toastr.min.css')}}" rel="stylesheet">
-        <link href="{{asset('linearicons/fonts.css')}}" rel="stylesheet')">
+        <link href="{{asset('css/linearicons/fonts.css')}}" rel="stylesheet')">
         <link href="{{asset('admin/css/style.css')}}" rel="stylesheet">
         <link href="{{asset('themes/explorer-fa/theme.css')}}" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" type="text/javascript"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" type="text/javascript"></script>
+
 </head>
 
         <script src="https://cdn.ckeditor.com/4.8.0/standard/ckeditor.js"></script>
@@ -146,5 +146,7 @@
         <script type="text/javascript" src="{{asset('js/plugins/data-tables/responsive.bootstrap4.min.js')}}"></script>
         <script type="text/javascript" src="{{asset('bower_components/toastr/toastr.min.js')}}"></script>
         <script type="text/javascript" src="{{asset('js/dashboard.custom.js')}}"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" type="text/javascript"></script>
     </body>
 </html>
