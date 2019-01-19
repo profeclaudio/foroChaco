@@ -27,7 +27,7 @@
                             </div>
                         </a><!--thumb-->
                         <div class="post-content text-center">
-                            <a href="{{route('noticia',$publication->id)}}">{{str_limit($publication->title,60)}}</a>
+                            <a href="{{route('noticia',$publication->id)}}">{{$publication->title}}</a>
                                 <ul class="post-meta list-inline">
                                     {{-- <li class="list-inline-item">
                                         <i class="fa fa-user-circle-o"></i> <a href="#">John Doe</a>
