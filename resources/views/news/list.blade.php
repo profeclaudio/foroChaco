@@ -39,7 +39,7 @@
                                         <i class="fa fa-tags"></i> <a href="#">Bootstrap4</a>
                                     </li> --}}
                                 </ul>                                
-                                <p><?php echo substr($publication->content,0,250)."..." ?></p>
+                                <p><?php echo substr($publication->content,0,160)."..." ?></p>
                                 {{-- <p>{{substr($publication->content,3,160)."..."}}</p> --}}
             
                             <a href="{{route('noticia',$publication->id)}}" class="btn btn-outline-secondary">Leer más</a>
