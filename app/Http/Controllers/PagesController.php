@@ -61,7 +61,7 @@ class PagesController extends Controller
     ]);
   }
 
-  public function list()
+  public function listPublications()
   {
     $publications = Publication::where('statusNew','publicado')->paginate(5);
     //dd($publications);
