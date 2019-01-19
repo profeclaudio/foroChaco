@@ -23,7 +23,7 @@
 
 </head>
 
-        <script src="https://cdn.ckeditor.com/4.8.0/standard/ckeditor.js"></script>
+        <script src="{{asset('js/ckeditor/ckeditor.js')}}"></script>
         <script src="{{asset('themes/explorer-fa/theme.js')}}"></script>
         <script src="{{asset('themes/fa/theme.js')}}"></script>
 

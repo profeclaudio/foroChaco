@@ -78,16 +78,16 @@
 
   <script type="text/javascript">
   CKEDITOR.replace( 'content', {
-      toolbar: [
-          { name: 'clipboard', groups: [ 'clipboard', 'undo' ], items: [ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo' ] },
-          { name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ], items: [ 'Bold', 'Italic', 'Strike', 'Subscript', 'Superscript', '-' ] },
-          { name: 'paragraph', groups: [ 'list', 'indent', 'blocks', 'align', 'bidi' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock', '-', 'BidiLtr', 'BidiRtl', 'Language' ] },
-          { name: 'links', items: [ 'Link', 'Unlink' ] },
-          '/',
-          { name: 'styles', items: [ 'Styles', 'Format', 'Font', 'FontSize' ] },
-          { name: 'colors', items: [ 'TextColor', 'BGColor' ] },
-          { name: 'others', items: [ '-' ] }
-      ]
+      // toolbar: [
+      //     { name: 'clipboard', groups: [ 'clipboard', 'undo' ], items: [ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo' ] },
+      //     { name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ], items: [ 'Bold', 'Italic', 'Strike', 'Subscript', 'Superscript', '-' ] },
+      //     { name: 'paragraph', groups: [ 'list', 'indent', 'blocks', 'align', 'bidi' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock', '-', 'BidiLtr', 'BidiRtl', 'Language' ] },
+      //     { name: 'links', items: [ 'Link', 'Unlink' ] },
+      //     '/',
+      //     { name: 'styles', items: [ 'Styles', 'Format', 'Font', 'FontSize' ] },
+      //     { name: 'colors', items: [ 'TextColor', 'BGColor' ] },
+      //     { name: 'others', items: [ '-' ] }
+      // ]
     });
 
 
