@@ -206,11 +206,8 @@
                                       {{$publication->title}}
                                 </a>
                             </h4>
-                            {{-- <p><?php echo substr($publication->content,0,160)."..." ?></p> --}}
-                            <p>
-
-                                  {{substr($publication->content,3,160)."..."}}
-                            </p>
+                            <p><?php echo substr($publication->content,0,160)."..." ?></p>
+                            
                             <div class="text-right">
                                 <a href="{{route('noticia',$publication->id)}}" class="btn-link btn">Leer mas</a>
                             </div>
