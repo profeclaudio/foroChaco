@@ -149,6 +149,7 @@
                                 <li><a href="{{route('que')}}" class="dropdown-item">Qué hacemos</a></li>
                             </ul>
                         </li>
+                        <li><a href="{{route('noticias')}}" class="nav-link  dropdown-toggle">Noticias</a></li>
                         <li><a href="{{route('contacto')}}" class="nav-link  dropdown-toggle">Contacto</a></li>
                       </ul>
                 </div>

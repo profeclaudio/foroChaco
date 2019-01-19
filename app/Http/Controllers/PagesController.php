@@ -61,6 +61,15 @@ class PagesController extends Controller
     ]);
   }
 
+  public function list()
+  {
+    $publications = Publication::where('statusNew','publicado')->paginate(5);
+    //dd($publications);
+    return view ('news.list',[
+      'publications' =>$publications
+    ]);
+  }
+
   public function autoridades()
   {
       $publications = Publication::where('id','>',0)->where('statusNew','publicado')->orderBy('id','DESC')->take(3)->get();
